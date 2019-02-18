@@ -1,6 +1,6 @@
-docker build -t lcruzero/multi-client:lastest -t lcruzero/multi-client:$GIT_SHA -f ./client/Dockerfile ./client
-docker build -t lcruzero/multi-server:lastest -t lcruzero/multi-server:$GIT_SHA -f ./server/Dockerfile ./server
-docker build -t lcruzero/multi-worker:lastest -t lcruzero/multi-worker:$GIT_SHA -f ./worker/Dockerfile ./worker
+docker build -t lcruzero/multi-client:latest -t lcruzero/multi-client:$GIT_SHA -f ./client/Dockerfile ./client
+docker build -t lcruzero/multi-server:latest -t lcruzero/multi-server:$GIT_SHA -f ./server/Dockerfile ./server
+docker build -t lcruzero/multi-worker:latest -t lcruzero/multi-worker:$GIT_SHA -f ./worker/Dockerfile ./worker
 
 docker push lcruzero/multi-client:latest
 docker push lcruzero/multi-server:latest
