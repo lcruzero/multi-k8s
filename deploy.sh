@@ -2,6 +2,7 @@ docker build -t lcruzero/multi-client:latest -t lcruzero/multi-client:$GIT_SHA -
 docker build -t lcruzero/multi-server:latest -t lcruzero/multi-server:$GIT_SHA -f ./server/Dockerfile ./server
 docker build -t lcruzero/multi-worker:latest -t lcruzero/multi-worker:$GIT_SHA -f ./worker/Dockerfile ./worker
 
+
 docker push lcruzero/multi-client:latest
 docker push lcruzero/multi-server:latest
 docker push lcruzero/multi-worker:latest
